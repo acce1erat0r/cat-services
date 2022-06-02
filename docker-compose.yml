@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db-cats-api:
+    image: postgres:14
+    restart: always # всегда рестартится докер образ с базой данных
+    ports:
+#      слева тот который будет на нашем хосте, справа дефолтный
+      - 8073:5432
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: cats-db
+

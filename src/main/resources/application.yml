@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DATASOURCE_HOST:localhost}:8073/cats-db
+    username: admin
+    password: admin
