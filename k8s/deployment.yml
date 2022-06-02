@@ -21,4 +21,4 @@ spec:
             - containerPort: 8080
           env:
             -name: DATASOURCE_HOST
-             value: 192.168.1.230
+             value: "192.168.1.230"
