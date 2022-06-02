@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: saleminstend
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: Prefix
+            path: "/cat-service"
+            backend:
+              service:
+                name: cat-service
+                port:
+                  number: 80
